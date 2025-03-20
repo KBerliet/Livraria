@@ -1,0 +1,35 @@
+.hamburger {
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 1002;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgb(59, 112, 211);
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: color 0.3s;
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.main {
+  margin-top: 50px;
+}

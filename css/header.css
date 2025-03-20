@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(59, 112, 211);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/*BARRA NAVEGAÇÃO */
+
+nav {
+  background-color: rgb(59, 112, 211);
+  text-align: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(59, 112, 211);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a:focus,
+.nav-links a:hover {
+  transform: scale(1.1);
+  color: rgb(59, 112, 211);
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: white;
+  padding: 0.5em;
+  transition: color 0.5s ease;
+  padding: 0px 30px;
+  border-right: 1px solid #3d3d3d;
+}
+
+.nav-links a:last-child {
+  border-right: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*BARRA NAVEGAÇÃO */
+.logo img {
+  height: 50px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff4081;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login a:hover {
+  background-color: #f50057;
+}
+
+/*BANNER*/
+
+.banner {
+  width: auto; /* Define a largura para 100% da largura da viewport */
+  position: relative; /* Para garantir alinhamento adequado */
+  left: 50%; /* Move o banner para o centro */
+  right: 50%; /* Ajusta para centralizar corretamente */
+  transform: translateX(
+    -50%
+  ); /* Corrige qualquer deslocamento causado pela posição */
+  overflow: hidden; /* Evita que qualquer parte extra da imagem saia dos limites */
+}
+
+.banner img {
+  width: 50%; /* Estica a imagem para cobrir a largura completa */
+  display: block; /* Remove qualquer espaço extra abaixo da imagem */
+}

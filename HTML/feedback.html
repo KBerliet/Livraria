@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leitura Compartilhada</title>
+    <link rel="icon" href="../images/teste.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img src="../images/teste.png" alt="Logo do Site" />
+        </div>
+        <nav class="nav-links">
+          <a href="../HTML/inicial.html">Pagina Inicial</a>
+          <a href="../HTML/procurar.html">Categorias de livros</a>
+          <a href="../HTML/livros.html">Livros em destaque</a>
+          <a href="../HTML/feedback.html">Avaliações e Comentários</a>
+        </nav>
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner">
+        <img src="../images/banner.png" alt="Banner Descritivo" />
+      </div>
+      <h1>Preferências de Livros</h1>
+      <form action="#" method="post">
+        <label for="genero">Gênero Favorito:</label>
+        <select name="genero" id="genero">
+          <option value="fantasia">Fantasia</option>
+          <option value="ficcao">Ficção Científica</option>
+          <option value="romance">Romance</option>
+          <option value="suspense">Suspense</option>
+          <option value="aventura">Aventura</option>
+        </select>
+
+        <label for="autor">Autor Favorito:</label>
+        <input type="text" id="autor" name="autor" />
+
+        <label for="ano">Ano de Lançamento Preferido:</label>
+        <input type="number" id="ano" name="ano" />
+
+        <label for="livro"
+          >Deixe seu comentario sobre algum livro que voce leu:</label
+        >
+        <input type="text" id="livro" name="livro" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+
+    <footer>
+      <section id="contato">
+        <h2>Contato</h2>
+        <address>
+          <p>Entre em contato conosco:</p>
+          <p>Endereço: Rua do meio, 123</p>
+          <p>Email: leituracompartilhada@contato.com</p>
+          <p>Telefone: (83) 4002-8922</p>
+        </address>
+      </section>
+    </footer>
+  </body>
+</html>

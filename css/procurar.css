@@ -1,0 +1,134 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e3f2fd;
+  color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+main h1 {
+  font-size: 24px;
+  color: #42a5f5;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+address {
+  font-style: normal;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.carrossel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carrossel {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.livros-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.livro {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  width: 150px;
+  max-width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.livro img {
+  width: calc(100% - 20px);
+  height: auto;
+  max-height: 200px;
+}
+
+.livro p {
+  color: rgb(255, 255, 255) 000;
+}
+
+.livro:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  z-index: 1;
+  background-color: #42a5f5;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #64b5f6;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.livros-container.auto {
+  animation: slide 10s infinite linear;
+}

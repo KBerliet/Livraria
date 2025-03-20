@@ -1,0 +1,149 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e3f2fd;
+  color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1,
+main h2 {
+  color: #42a5f5;
+}
+
+main p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+/* Fim rodapé */
+
+/* Carrosel */
+
+.carrossel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carrossel {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.livros-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.livro {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  width: 150px;
+  max-width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.livro img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.livro:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Fim conteudo Carrosel */
+
+/* Animação Carrosel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
+  }
+}
+
+.livros-container.auto {
+  animation: slide 10s infinite linear;
+}
+
+/* Fim animação Carrosel */
+
+/* Tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Fim da tabela */
+
+/* Responsividade */
+
+@media (max-width: 795px) {
+  .carrossel,
+  .livro {
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsividade */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.nav-container {
+  width: 100%;
+}

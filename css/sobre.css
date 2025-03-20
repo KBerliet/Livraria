@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  background: #fff;
+  margin: 10px;
+}
+
+h1,
+h2 {
+  color: #42a5f5;
+}
+
+/* Rodapé */
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #42a5f5;
+  color: white;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social,
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social a {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact p,
+.footer-legal p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .footer-legal {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Fim rodapé */
